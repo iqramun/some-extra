@@ -1,0 +1,276 @@
+/*Homework*/ 
+
+.center {
+     margin-top: 20px;
+      margin-bottom: 100px;
+      overflow: hidden;
+      
+    }
+
+    .awesome {
+      font-family: futura;
+      font-style: italic;
+      
+      width:70%;
+      text-align: center;
+      
+      color:#313131;
+      font-size:45px;
+      font-weight: bold;
+      position: absolute;
+      -webkit-animation:colorchange 5s infinite alternate;
+      
+      
+    }
+.center h1{
+    border: 5px solid;
+}
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: blue;
+      }
+      
+      10% {
+        
+        color: #8e44ad;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+
+
+/*header animation*/
+
+.deconstructed {
+  position: relative;
+  margin: 20px;
+  height: 0.71em;
+  color: transparent;
+  font-size: 4vw;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1em;
+    padding: 60px;
+}
+
+.deconstructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: RED;
+  pointer-events: none;
+}
+
+.deconstructed > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  mask-image: linear-gradient(black 25%, transparent 25%);
+  animation: deconstructed1 5s infinite;
+}
+
+.deconstructed > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  animation: deconstructed2 5s infinite;
+}
+
+.deconstructed > div:nth-child(3) {
+   -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  animation: deconstructed3 5s infinite;
+}
+
+.deconstructed > div:nth-child(4) {
+   -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: deconstructed4 5s infinite;
+}
+
+
+
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+  83% {
+    transform: translateX(-0.1%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+  82% {
+    transform: translateX(-0.2%);
+  }
+  100% {
+    transform: translateX(-125%);
+  }
+}
+
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+  81% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-130%);
+  }
+}
+
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-135%);
+  }
+}
+
+
+
+/*siblings*/
+
+
+.siblings *{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+.siblings{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
+
+
+
+/*all-function*/
+.more{
+    text-align: center;
+}
+.more button{
+   background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; 
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+    
+}
+.more button:hover{
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+}
+.more p{
+    margin-top: 100px;
+    line-height: 2;
+    margin-bottom: 100px;
+}
+
+/*Akash Vai*/
+.please{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.faq{
+    margin-bottom: 100px;
+}
+
+.div h1{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
